@@ -90,6 +90,86 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+	background: lightgray;
+	color:white;
+	font-family: Arial;
+	font-size: 16px;
+	text-shadow: 1px
+}
+#contenedor{
+background:gray;
+margin:auto;
+max-width:986px;
+}
+#header{
+text-align:center;
+clear:left;
+}
+header {
+	border: 10px solid black; 
+	padding: 20px;
+	display:inline-block;
+	margin-top:-3%;
+	text-align:left;
+}
+#webs{
+background:gray;
+text-align: center;
+padding:20px;
+}
+#webs article{
+padding:10px;
+width:304px;
+border:1px solid white;
+background: #ccc;
+display:inline-block;
+margin:10px;
+color:black;
+}
+#webs article img{
+-webkit-transition: .2s;
+-moz-transition: .2s;
+}
+#webs article:hover img{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+}
+
+.avatar,.personal{
+	float:left;
+}
+.avatar{
+border:5px solid white;
+margin-left:20px;
+}
+nav ul {
+padding:0;
+background: rgba(0,0,0,.5);
+text-align:center;
+}
+nav div {
+width:40px;
+float:left;
+}
+nav ul li{
+box-sizing:border-box;
+display:inline-block;
+padding:10px;
+width: 24%;
+}
+nav ul li a{
+color:white;
+text-decoration:none;
+text-transform: uppercase;
+
+}
+nav ul li:hover{
+background: rgba(0,0,0,.3);
+}
+.logo{
+margin-left:10%;
+}
 
 
 
@@ -262,4 +342,20 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
+}
+@media screen and (max-width: 480px){
+ nav ul li {
+	width:50%;
+ }
+ header{
+ display:block;
+ width:auto;
+ text-align:center;
+ }
+ .avatar,.personal{
+	float:none;
+}
+.avatar{
+	margin:10px 0;
+}
 }
